@@ -2,7 +2,8 @@ class Templates {
     class Vanilla_Base; //import Vanilla_Base from A3A to use with defining a new vanilla template
 
     class CUP_Core{
-        
+        requiredAddons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"};        // units, weapons, vehicles
+        priority = 60;
     };
 
     class Vanilla_AAF { // overwrite existing template
