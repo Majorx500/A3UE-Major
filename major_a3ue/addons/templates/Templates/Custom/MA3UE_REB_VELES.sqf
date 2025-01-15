@@ -9,13 +9,13 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "Sahrani Liberation Forces"] call _fnc_saveToTemplate;
+["name", "Veles"] call _fnc_saveToTemplate;
 
-["flag", ""] call _fnc_saveToTemplate;
-["flagTexture", ""] call _fnc_saveToTemplate;
-["flagMarkerType", ""] call _fnc_saveToTemplate;
+["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
+["flagTexture", "a3\data_f\flags\flag_fia_co.pa"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["CUP_I_Hilux_unarmed_NAPA", "CFP_B_USCIA_Datsun_PK_01", "I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["CUP_I_Hilux_unarmed_NAPA", "CUP_C_Datsun", "I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["CUP_I_Hilux_Armored_unarmed_IND_G_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["CUP_I_Hilux_M2_IND_G_F", "CUP_I_Datsun_PK", "CUP_I_LR_MG_AAF"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["I_Truck_02_transport_F"]] call _fnc_saveToTemplate;
@@ -50,9 +50,6 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
-["lootCrate", ""] call _fnc_saveToTemplate;
-["rallyPoint", ""] call _fnc_saveToTemplate;
-
 //animation sources - camo nets, slat cages, decals etc, digit is probability of appearance
 ["animations", [
     ["vehClass", ["animsource_example_1", 0.25, "animsource_example_2", 0.3]]
@@ -86,7 +83,7 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment app
 _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
-private _rebUniforms = ["CUP_I_B_PARA_Unit_4", "CUP_I_B_PARA_Unit_8", "CUP_U_I_GUE_WorkU_01", "CUP_U_I_GUE_WorkU_02", "CFP_GUER_ERDLpants"];          //Uniforms given to Normal Rebels
+private _rebUniforms = ["CUP_I_B_PARA_Unit_4", "CUP_I_B_PARA_Unit_8", "CUP_U_I_GUE_WorkU_01", "CUP_U_I_GUE_WorkU_02", "CUP_U_I_GUE_Anorak_03"];          //Uniforms given to Normal Rebels
 
 private _dlcUniforms = [];          //Uniforms given if DLCs are enabled, only given to the Arsenal not Rebels
 
