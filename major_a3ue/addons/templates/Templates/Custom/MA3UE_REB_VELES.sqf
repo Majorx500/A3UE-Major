@@ -66,7 +66,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //  Rebel Starting Gear  //
 ///////////////////////////
 
-private _initialRebelEquipment = ["CUP_smg_SA61", "CUP_srifle_LeeEnfield_rail", "CUP_srifle_CZ550", "CUP_sgun_slamfire", "CUP_hgun_SA61", "CUP_hgun_TaurusTracker455", "CUP_smg_M3A1_blk", //weapon
+private _initialRebelEquipment = ["CUP_smg_SA61","CUP_srifle_Remington700",["CUP_optic_Remington", 10] , "CUP_sgun_slamfire", "CUP_hgun_SA61", "CUP_hgun_TaurusTracker455", "CUP_smg_M3A1_blk", //weapon
 "CUP_1Rnd_12Gauge_Pellets_No00_Buck", "CUP_1Rnd_12Gauge_Pellets_No3_Buck", "CUP_1Rnd_12Gauge_Pellets_No4_Bird", "CUP_10x_303_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_5x_22_LR_17_HMR_M", //Ammo
 "CUP_6rnd_45ACP_M", "CUP_30Rnd_45ACP_M3A1_BLK_M",
 "CUP_V_I_Guerilla_Jacket", "CUP_V_I_Carrier_Belt", "V_BandollierB_oli", "CUP_V_I_Carrier_Belt", "CUP_V_I_Guerilla_Jacket",
@@ -80,6 +80,7 @@ if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc15
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
+if (A3A_hasACRE2) then {_initialRebelEquipment append ["ACRE_PRC117F"]}
 _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
