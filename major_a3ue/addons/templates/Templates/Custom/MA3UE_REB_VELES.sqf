@@ -15,27 +15,27 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "a3\data_f\flags\flag_fia_co.pa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["CUP_I_Hilux_unarmed_NAPA", "CUP_C_Datsun", "I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["CUP_I_Hilux_Armored_unarmed_IND_G_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["CUP_I_Hilux_M2_IND_G_F", "CUP_I_Datsun_PK", "CUP_I_LR_MG_AAF"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["CUP_I_Hilux_unarmed_NAPA", "I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", []] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["CUP_I_Hilux_M2_IND_G_F", "CUP_I_LR_MG_AAF"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["I_Truck_02_transport_F"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["CUP_I_Hilux_SPG9_NAPA"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["CUP_I_Datsun_AA"]] call _fnc_saveToTemplate;
+["vehiclesAA", []] call _fnc_saveToTemplate;
 
-["vehiclesBoat", ["B_G_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
+["vehiclesBoat", []] call _fnc_saveToTemplate;
 
 ["vehiclesPlane", ["CUP_I_CESSNA_T41_UNARMED_RACS"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["I_E_Truck_02_Medical_F"]] call _fnc_saveToTemplate;
 
-["vehiclesCivCar", ["C_Offroad_01_F","CUP_C_TT650_CIV", "CUP_C_Datsun_Plain"]] call _fnc_saveToTemplate;
-["vehiclesCivTruck", ["CUP_C_Ural_Open_Civ_01", "CUP_C_Ural_Civ_02"]] call _fnc_saveToTemplate;
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F", "CUP_C_412"]] call _fnc_saveToTemplate;
-["vehiclesCivBoat", ["CUP_C_PBX_CIV", "CUP_C_Zodiac_CIV"]] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["C_Offroad_01_F","CUP_C_TT650_CIV"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["CUP_C_Ural_Civ_02"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli", ["CUP_C_412"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", []] call _fnc_saveToTemplate;
 ["vehiclesCivPlane", ["CUP_C_CESSNA_CIV"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["CUP_B_l111A1_BAF_WDL", "CUP_B_M2StaticMG_US"]] call _fnc_saveToTemplate;
+["staticMGs", ["CUP_B_l111A1_BAF_WDL"]] call _fnc_saveToTemplate;
 ["staticAT", ["CUP_B_SPG9_CDF"]] call _fnc_saveToTemplate;
-["staticAA", ["CUP_B_Igla_AA_pod_CDF"]] call _fnc_saveToTemplate;
+["staticAA", []] call _fnc_saveToTemplate;
 ["staticMortars", ["CUP_B_L16A2_BAF_DDPM"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
@@ -66,21 +66,22 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //  Rebel Starting Gear  //
 ///////////////////////////
 
-private _initialRebelEquipment = ["CUP_smg_SA61","CUP_srifle_Remington700",["CUP_optic_Remington", 10] , "CUP_sgun_slamfire", "CUP_hgun_SA61", "CUP_hgun_TaurusTracker455", "CUP_smg_M3A1_blk", //weapon
-"CUP_1Rnd_12Gauge_Pellets_No00_Buck", "CUP_1Rnd_12Gauge_Pellets_No3_Buck", "CUP_1Rnd_12Gauge_Pellets_No4_Bird", "CUP_10x_303_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_5x_22_LR_17_HMR_M", //Ammo
-"CUP_6rnd_45ACP_M", "CUP_30Rnd_45ACP_M3A1_BLK_M",
-"CUP_V_I_Guerilla_Jacket", "CUP_V_I_Carrier_Belt", "V_BandollierB_oli", "CUP_V_I_Carrier_Belt", "CUP_V_I_Guerilla_Jacket",
-"CUP_V_I_RACS_Carrier_Rig_2", "CUP_V_I_RACS_Carrier_Rig_wdl_2", "CUP_V_RUS_Smersh_New_Light", "CUP_V_OI_TKI_Jacket1_06",
-"CUP_V_OI_TKI_Jacket5_05", "CUP_V_OI_TKI_Jacket5_06", "CUP_V_OI_TKI_Jacket3_04",
-"B_FieldPack_cbr", "B_FieldPack_khk", "B_FieldPack_oli","B_AssaultPack_cbr","B_AssaultPack_rgr","B_AssaultPack_khk","Binocular",
-"CUP_HandGrenade_RGD5", "SmokeShell", ["CUP_IED_V3_M", 10], ["CUP_IED_V1_M", 10], ["CUP_IED_V2_M", 3], ["CUP_IED_V4_M", 3], "kat_suction"
+private _initialRebelEquipment = [
+    "CUP_srifle_Mosin_Nagant", ["CUP_optic_PEM",5], "CUP_sgun_CZ584", "CUP_hgun_FlareGun", "CUP_hgun_TaurusTracker455",  //weapons, optics
+    "CUP_5Rnd_762x54_Mosin_M" ,"CUP_1Rnd_12Gauge_Pellets_No0_Buck", ["CUP_FlareWhite_265_M", 20], "CUP_6Rnd_45ACP_M",  //ammo
+    "tsp_meleeWeapon_training", "tsp_meleeWeapon_kitchen", //melee
+    "CUP_V_I_Guerilla_Jacket", "V_BandolierB_wdl", "CUP_V_I_Carrier_Belt",  //vests
+    "B_FieldPack_green_F", ["CUP_B_HikingPack_Civ",5],  //Backpacks
+    ["CUP_IED_V3_M", 10], ["CUP_IED_V2_M", 3],  //explosives
+    "CUP_HandGrenade_RGD5", "SmokeShell","SmokeShellRed", "SmokeShellGreen", "SmokeShellBlue" //grenades
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
-if (A3A_hasACRE2) then {_initialRebelEquipment append ["ACRE_PRC117F"]}
+if (A3A_hasACRE2) then {_initialRebelEquipment append ["ACRE_PRC117F"]};
+if (A3A_hasKAT) then {_initialRebelEquipment append ["kat_suction"]};
 _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
