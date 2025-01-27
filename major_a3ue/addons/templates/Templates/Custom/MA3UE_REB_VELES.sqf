@@ -69,11 +69,12 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 private _initialRebelEquipment = [
     "CUP_srifle_Mosin_Nagant", ["CUP_optic_PEM",5], "CUP_sgun_CZ584", "CUP_hgun_FlareGun", "CUP_hgun_TaurusTracker455",  //weapons, optics
     "CUP_5Rnd_762x54_Mosin_M" ,"CUP_1Rnd_12Gauge_Pellets_No0_Buck", ["CUP_FlareWhite_265_M", 20], "CUP_6Rnd_45ACP_M",  //ammo
-    "tsp_meleeWeapon_training", "tsp_meleeWeapon_kitchen", //melee
+    "tsp_meleeWeapon_training", "tsp_meleeWeapon_kitchen", "tsp_meleeWeapon_splittingexe", //melee
     "CUP_V_I_Guerilla_Jacket", "V_BandolierB_wdl", "CUP_V_I_Carrier_Belt",  //vests
     "B_FieldPack_green_F", ["CUP_B_HikingPack_Civ",5],  //Backpacks
     ["CUP_IED_V3_M", 10], ["CUP_IED_V2_M", 3],  //explosives
-    "CUP_HandGrenade_RGD5", "SmokeShell","SmokeShellRed", "SmokeShellGreen", "SmokeShellBlue" //grenades
+    "CUP_HandGrenade_RGD5", "SmokeShell","SmokeShellRed", "SmokeShellGreen", "SmokeShellBlue", //grenades
+    "tsp_lockpick"//misc
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};

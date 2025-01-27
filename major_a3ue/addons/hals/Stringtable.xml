@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="HALLYG_STORE">
+<Project name="A3AU_hals_store">
     <Package name="General">
             <Container name="A3AU_hals_store_helpers">
                 <Key ID="STR_A3AU_rksl">
@@ -9,6 +9,30 @@
                     <German>RKSL</German>
                     <Korean>RKSL</Korean>
                     <French>RKSL</French>
+                </Key>
+                <Key ID="STR_A3AU_Tsp_Breach">
+                    <Original>TSP Breach</Original>
+                    <English>TSP Breach</English>
+                    <Russian>TSP Breach</Russian>
+                    <German>TSP Breach</German>
+                    <Korean>TSP Breach</Korean>
+                    <French>TSP Breach</French>
+                </Key>
+                <Key ID="STR_A3AU_Tsp_Melee">
+                    <Original>TSP Melee</Original>
+                    <English>TSP Melee</English>
+                    <Russian>TSP Melee</Russian>
+                    <German>TSP Melee</German>
+                    <Korean>TSP Melee</Korean>
+                    <French>TSP Melee</French>
+                </Key>
+                <Key ID="STR_A3AU_Majors">
+                    <Original>Major's</Original>
+                    <English>Major's</English>
+                    <Russian>Major's</Russian>
+                    <German>Major's</German>
+                    <Korean>Major's</Korean>
+                    <French>Major's</French>
                 </Key>
             </Container>
     </Package>

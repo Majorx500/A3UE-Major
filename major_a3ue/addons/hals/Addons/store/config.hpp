@@ -25,8 +25,10 @@ class cfgHALsStore
 {
 	class categories 
 	{
-		#include "config\vanilla.hpp"
 		#include "config\rksl_attachments.hpp"
+		#include "config\tsp_breach.hpp"
+		#include "config\tsp_melee.hpp"
+		#include "config\majors_misc.hpp"
 	};
 
 	class stores 
@@ -36,6 +38,27 @@ class cfgHALsStore
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"opticsRksl"
+			};
+		};
+
+		class maja3ue_stock_tsp_breach{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[]={
+				"miscBreach"
+			};
+		};
+
+		class maja3ue_stock_tsp_melee{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[]={
+				"miscMelee"
+			};
+		};
+
+		class maja3ue_stock_majors_misc{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"miscMajor"
 			};
 		};
 	};
