@@ -9,6 +9,6 @@
     
         class addons_rksl : addons_base
     {
-       // addons[] = {};
-        weapons = "weapons_maja3ue_stock_rksl_attachments";
+        addons[] = {"RKSL_EOT552", "RKSL_LDS", "RKSL_PMII", "RKSL_PMII_525", "RKSL_RMR"};
+        weapons = "weapons_rksl";
     };

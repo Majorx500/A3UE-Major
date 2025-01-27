@@ -1,6 +1,6 @@
         class weapons_base;
 
-        class my_extension_weapons_vanilla : weapons_base
+        class weapons_rksl: weapons_base
         {
-            prefix = "my_extension_stock_vanilla"
+            prefix = "maja3ue_stock_rksl_attachments"
         };

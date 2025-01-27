@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="HALLYG_STORE">
+    <Package name="General">
+            <Container name="A3AU_hals_store_helpers">
+                <Key ID="STR_A3AU_rksl">
+                    <Original>RKSL</Original>
+                    <English>RKSL</English>
+                    <Russian>RKSL</Russian>
+                    <German>RKSL</German>
+                    <Korean>RKSL</Korean>
+                    <French>RKSL</French>
+                </Key>
+            </Container>
+    </Package>
+</Project>
