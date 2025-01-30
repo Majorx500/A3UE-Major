@@ -74,7 +74,7 @@ private _initialRebelEquipment = [
     "B_FieldPack_khk", ["CUP_B_HikingPack_Civ",5],  //Backpacks
     ["CUP_IED_V3_M", 10], ["CUP_IED_V2_M", 3],  //explosives
     "CUP_HandGrenade_RGD5", "SmokeShell","SmokeShellRed", "SmokeShellGreen", "SmokeShellBlue", //grenades
-    "tsp_lockpick"//misc
+    "tsp_lockpick", "Binocular"//misc
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};

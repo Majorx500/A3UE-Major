@@ -29,7 +29,7 @@ class Templates {
         flagtexture = "A3\Data_F\Flags\Flag_AAF_CO.paa";
         name = "M3AUE Veles"; //the name shown in the selector
         file = "MA3UE_REB_VELES"; //the template file name
-        climate[] = {"arid", "arctic", "temperate"}; //climate that the template is meant for
+        climate[] = {"arctic", "temperate"}; //climate that the template is meant for
     };
     class CUP_VELES_DES : CUP_Core
     {
@@ -38,7 +38,7 @@ class Templates {
         flagtexture = "A3\Data_F\Flags\Flag_AAF_CO.paa";
         name = "M3AUE Veles Desert";
         file = "MA3UE_REB_VELES_DES";
-        climate[] = {"arctic", "temperate"};
+        climate[] = {"arctic", "arid"};
     }
 
 };
